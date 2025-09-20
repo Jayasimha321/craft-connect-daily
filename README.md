@@ -1,73 +1,106 @@
-# Welcome to your Lovable project
+# SkillConnect - Rural Skilled Worker Platform
 
-## Project info
+## Problem Statement
+Skilled workers in rural and semi-urban areas face high unemployment or underemployment because they lack a platform to connect directly with employers seeking their specific skills (e.g., carpentry, plumbing, tailoring). Traditional job portals do not cater to this blue-collar workforce effectively.
 
-**URL**: https://lovable.dev/projects/8943b52b-cad8-40e5-973d-a48ff4bc4220
+## Solution
+SkillConnect is a web application that bridges the gap between skilled workers and employers in rural and semi-urban areas. The platform provides a simple, mobile-friendly interface for both workers to showcase their skills and employers to find qualified workers for their projects.
 
-## How can I edit this code?
+## Features Implemented
 
-There are several ways of editing your application.
+### For Workers:
+- **Registration & Profile Creation**: Input skills, location, experience, hourly rates, and availability
+- **Job Browser**: Search and filter available jobs by skill, location, and budget
+- **Dashboard**: View profile, manage applications, and track job opportunities
+- **Skills Supported**: Carpentry, Plumbing, Electrical, Masonry, Tailoring, Welding, and more
 
-**Use Lovable**
+### For Employers:
+- **Job Posting**: Create detailed job descriptions with requirements, location, and budget
+- **Worker Search**: Browse and filter skilled workers by skill set, location, and experience
+- **Dashboard**: Manage posted jobs and view applicant responses
+- **Direct Communication**: Contact workers directly for job opportunities
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8943b52b-cad8-40e5-973d-a48ff4bc4220) and start prompting.
+### Core Platform Features:
+- **Mobile-Responsive Design**: Optimized for rural area mobile access
+- **Location-Based Matching**: Connect workers and employers in the same region
+- **Skill Categorization**: Comprehensive list of blue-collar skills
+- **Simple Authentication**: Easy sign-up process for both user types
+- **Clean UI/UX**: Intuitive interface designed for users with varying tech literacy
 
-Changes made via Lovable will be committed automatically to this repo.
+## Technology Stack
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS with custom design system
+- **UI Components**: Shadcn/ui component library
+- **Backend**: Supabase (PostgreSQL database, Authentication, Real-time features)
+- **Deployment**: Lovable platform
 
-**Use your preferred IDE**
+## How It Solves the Problem
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. **Accessibility**: Mobile-first design ensures rural workers can access the platform on their phones
+2. **Simplicity**: Straightforward registration and job posting process
+3. **Local Focus**: Location-based matching keeps connections within manageable geographic areas
+4. **Skill-Specific**: Tailored specifically for blue-collar trades and skills
+5. **Direct Connection**: Eliminates intermediaries between workers and employers
+6. **Cost-Effective**: Free platform reduces barriers to entry for rural workers
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Demo URLs
+- **Landing Page**: `/` - Choose worker or employer path
+- **Authentication**: `/auth` - Sign up or sign in
+- **Worker Registration**: `/worker/register` - Create worker profile
+- **Worker Dashboard**: `/worker/dashboard` - Browse jobs and manage profile
+- **Employer Dashboard**: `/employer/dashboard` - Post jobs and find workers
 
-Follow these steps:
+## Setup Instructions
 
+### Prerequisites
+- Node.js 18+ and npm
+- Supabase account (for backend integration)
+
+### Installation
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone <repository-url>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to project directory
+cd skillconnect
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Supabase Setup
+1. Create a new Supabase project
+2. Set up authentication with email/password
+3. Create database tables for:
+   - User profiles (workers and employers)
+   - Job postings
+   - Skill categories
+   - Location data
+   - Messages/connections
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Deployment
+Deploy directly through Lovable platform or build for production:
+```sh
+npm run build
+```
 
-**Use GitHub Codespaces**
+## Future Enhancements
+- Real-time messaging system
+- Rating and review system
+- Payment integration
+- Advanced search filters
+- Mobile app (React Native/Capacitor)
+- Offline functionality for areas with poor connectivity
+- Multi-language support
+- Skills verification system
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Impact Metrics
+- **Target Users**: 10,000+ skilled workers in rural areas
+- **Expected Job Matches**: 500+ per month
+- **Success Rate Goal**: 80% connection-to-hire rate
+- **Geographic Coverage**: Rural and semi-urban regions across multiple states
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/8943b52b-cad8-40e5-973d-a48ff4bc4220) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This prototype demonstrates a viable solution for connecting skilled rural workers with employment opportunities, addressing a significant market gap in blue-collar job platforms.
